@@ -1,0 +1,21 @@
+{
+  "name": "blogpage",
+  "version": "1.0.0",
+  "description": "Advanced Git &amp; DevOps Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikum-2/-blog-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vikum-2/-blog-page/issues"
+  },
+  "homepage": "https://github.com/vikum-2/-blog-page#readme"
+}
