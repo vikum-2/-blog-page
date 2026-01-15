@@ -4,6 +4,7 @@
   "description": "Advanced Git &amp; DevOps Assignment",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/vikum-2/-blog-page/issues"
   },
-  "homepage": "https://github.com/vikum-2/-blog-page#readme"
+  "homepage": "https://github.com/vikum-2/-blog-page#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
