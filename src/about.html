@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About TechNest | Our Story</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- header -->
+  <header class="top-bar">
+    <h1 class="logo">TechNest</h1>
+    <div class="header-nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active">About</a>
+    </div>
+  </header>
+
+  <!-- sibscrip -->
+  <section class="newsletter-section">
+    <div class="newsletter-container">
+      <div class="newsletter-content">
+        <h3>Subscribe to TechNest</h3>
+        <p>Get the latest tech news, reviews, and gaming updates delivered to your inbox!</p>
+      </div>
+      <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email..." required>
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- about -->
+  <div class="about-container">
+    <section class="about-hero">
+      <h1>About TechNest</h1>
+      <p class="about-tagline">Your gateway to the world of technology, computing, and gaming</p>
+    </section>
+
+    <!-- what is technest -->
+    <section class="about-section">
+      <div class="about-card fade-in-on-scroll">
+        <div class="about-icon">🚀</div>
+        <h2>What is TechNest?</h2>
+        <p>
+          TechNest is a passionate tech and gaming blog dedicated to bringing you the latest insights, reviews, 
+          and news from the world of computing and technology. Founded by young researchers and students at Horizon 
+          Campus, we aim to make complex technology concepts accessible and engaging for everyone.
+        </p>
+        <p>
+          Our mission is to create a community where tech enthusiasts can discover in-depth articles, honest reviews, 
+          and the latest trends shaping the digital world.
+        </p>
+      </div>
+    </section>
+
+    <!-- Who we ere -->
+    <section class="about-section team-section">
+      <h2 class="section-title">Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-card fade-in-on-scroll">
+          <div class="team-avatar">👨‍💻</div>
+          <h3>Adeesha Akalanka</h3>
+          <p class="team-role">Co-Founder & Tech Writer</p>
+          <p class="team-bio">
+            Undergraduate student pursuing BIT Hons. in Network and Mobile Computing at Horizon Campus. 
+            Passionate about emerging technologies and their real-world applications. Research interests include 
+            network optimization and mobile computing paradigms.
+          </p>
+        </div>
+
+        <div class="team-card fade-in-on-scroll">
+          <div class="team-avatar">👩‍💻</div>
+          <h3>Vikum Prabodya</h3>
+          <p class="team-role">Co-Founder & Editor</p>
+          <p class="team-bio">
+            Undergraduate student pursuing BIT Hons. in Network and Mobile Computing at Horizon Campus. 
+            Dedicated researcher with a focus on innovative tech solutions. Bringing a unique perspective 
+            to technology journalism and digital content creation.
+          </p>
+        </div>
+      </div>
+      <p class="team-subtitle">
+        Both Adeesha & Vikum are undergraduate researchers at Horizon Campus, combining their academic expertise 
+        with practical knowledge to bring you authentic tech insights.
+      </p>
+    </section>
+
+    <!-- What we do -->
+    <section class="about-section topics-section">
+      <h2 class="section-title">What We Cover</h2>
+      <div class="topics-grid">
+        <div class="topic-card fade-in-on-scroll">
+          <div class="topic-icon">🤖</div>
+          <h3>Artificial Intelligence</h3>
+          <p>Exploring AI breakthroughs, machine learning advances, and the future of intelligent systems.</p>
+        </div>
+
+        <div class="topic-card fade-in-on-scroll">
+          <div class="topic-icon">📱</div>
+          <h3>Mobile Computing</h3>
+          <p>Latest mobile devices, app reviews, and the evolution of mobile technology.</p>
+        </div>
+
+        <div class="topic-card fade-in-on-scroll">
+          <div class="topic-icon">🎮</div>
+          <h3>Gaming</h3>
+          <p>Gaming laptop reviews, game recommendations, and esports insights.</p>
+        </div>
+
+        <div class="topic-card fade-in-on-scroll">
+          <div class="topic-icon">⚙️</div>
+          <h3>Hardware</h3>
+          <p>In-depth hardware reviews, performance benchmarks, and tech specs analysis.</p>
+        </div>
+
+        <div class="topic-card fade-in-on-scroll">
+          <div class="topic-icon">🌐</div>
+          <h3>Networking</h3>
+          <p>Network technologies, cybersecurity trends, and connectivity innovations.</p>
+        </div>
+
+        <div class="topic-card fade-in-on-scroll">
+          <div class="topic-icon">💡</div>
+          <h3>Tech Trends</h3>
+          <p>Future tech predictions, emerging technologies, and industry innovations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- why technest -->
+    <section class="about-section why-section">
+      <h2 class="section-title">Why TechNest?</h2>
+      <div class="why-grid">
+        <div class="why-card fade-in-on-scroll">
+          <div class="why-number">01</div>
+          <h3>Authentic Voices</h3>
+          <p>Written by real students and researchers passionate about technology.</p>
+        </div>
+
+        <div class="why-card fade-in-on-scroll">
+          <div class="why-number">02</div>
+          <h3>In-Depth Analysis</h3>
+          <p>We dive deep into topics with technical expertise and practical insights.</p>
+        </div>
+
+        <div class="why-card fade-in-on-scroll">
+          <div class="why-number">03</div>
+          <h3>Community First</h3>
+          <p>Building a community where tech enthusiasts can learn and grow together.</p>
+        </div>
+
+        <div class="why-card fade-in-on-scroll">
+          <div class="why-number">04</div>
+          <h3>Regular Updates</h3>
+          <p>Fresh content regularly covering the latest tech news and trends.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contacts -->
+    <section class="about-section contact-cta">
+      <h2>Get in Touch</h2>
+      <p>Have questions or feedback? We'd love to hear from you!</p>
+      <div class="contact-info">
+        <p>📧 Email: <a href="mailto:itbnm-2313-0072@gmail.com">itbnm-2313-0072@gmail.com</a></p>
+        <p>📞 Phone: +94 784 730 175</p>
+      </div>
+      <a href="index.html" class="cta-button">Back to Home</a>
+    </section>
+  </div>
+
+  <!--  footer  -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>About TechNest</h4>
+        <p>Your source for tech, gaming, and computing insights.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: itbnm-2313-0072@gmail.com</p>
+        <p>Phone: +94 784 730 175</p>
+        <p>© 2026 Adeesha Akalanka & Vikum Prabodya</p>
+      </div>
+
+      <div class="footer-section social-links">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://github.com" target="_blank" class="social-link" title="GitHub">
+            <span class="social-icon">🐙</span>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn">
+            <span class="social-icon">💼</span>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="social-link" title="Twitter/X">
+            <span class="social-icon">𝕏</span>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram">
+            <span class="social-icon">📷</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubscribe(event) {
+      event.preventDefault();
+      const email = document.getElementById('newsletterEmail').value;
+      alert('Thanks for subscribing with ' + email + '! Check your inbox for updates.');
+      document.getElementById('newsletterEmail').value = '';
+    }
+
+    // scroll animation 
+    function observeScrollElements() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-in-on-scroll').forEach(el => {
+        observer.observe(el);
+      });
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', observeScrollElements);
+  </script>
+
+</body>
+</html>
