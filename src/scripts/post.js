@@ -6,7 +6,7 @@ const posts = [
     category: "AI",
     excerpt: "How AI is changing the world.",
     content: "Artificial Intelligence is transforming industries, automating workflows, and redefining how humans interact with technology.",
-    image: "images/ai revolution 2026.jpg",
+    image: "../images/ai-revolution-2026.jpg",
     date: "January 5, 2026",
     coupon: "TECHNEST5"
   },
@@ -16,7 +16,7 @@ const posts = [
     category: "Mobile",
     excerpt: "Best phones for tech lovers.",
     content: "From foldables to AI-powered cameras, mobile devices in 2026 focus on performance, battery life, and smart features.",
-    image: "images/Top Mobile Devices.jpg",
+    image: "../images/Top-Mobile-Devices.jpg",
     date: "January 8, 2026",
     coupon: "TECHNEST5"
   },
@@ -26,7 +26,7 @@ const posts = [
     category: "Gaming",
     excerpt: "What gamers expect in 2026.",
     content: "Cloud gaming, ray tracing, and AI NPCs are reshaping the gaming experience for both casual and competitive players.",
-    image: "images/Gaming Trends 2026.jpg",
+    image: "../images/Gaming-Trend-2026.jpg",
     date: "January 12, 2026",
     coupon: "TECHNEST5"
   },
@@ -36,7 +36,7 @@ const posts = [
     category: "Hardware",
     excerpt: "Boost your PC performance.",
     content: "Upgrading SSDs, RAM, and GPUs can dramatically improve system performance for work and gaming.",
-    image: "images/Hardware Upgrades That Matter.jpg",
+    image: "../images/Hardware-Upgrades-That-Matter.jpg",
     date: "January 15, 2026",
     coupon: "TECHNEST5"
   },
@@ -46,7 +46,7 @@ const posts = [
     category: "AI",
     excerpt: "Protecting data in a digital world.",
     content: "AI-driven security systems are becoming essential to detect threats and protect sensitive data.",
-    image: "images/ai in cybersecurity.jpg",
+    image: "../images/ai-in-cybersecurity.jpg",
     date: "January 18, 2026",
     coupon: "TECHNEST5"
   }
