@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "AI is Changing the World",
       excerpt: "Explore how AI is transforming tech, business, and daily life.",
       category: "AI",
-      image: "image/ai-revolution-2026.jfif"
+      image: "image/ai-revolution-2026.jpg"
     },
     {
       id: 2,
