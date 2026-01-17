@@ -1,0 +1,27 @@
+name:  Site Workflow
+
+on:
+  push:
+    branches:
+      - main   
+  pull_request:
+    branches:
+      - main   
+
+jobs:
+  check-files:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Verify site files
+      run: |
+        echo "Listing site files..."
+        ls -R src
+        if [ ! -f src/index.html ]; then
+          echo "Error: index.html not found!"
+          exit 1
+        fi
+        echo "All required files are present!"

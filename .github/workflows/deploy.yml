@@ -1,27 +1,15 @@
-name:  Site Workflow
+name: Deployment Documentation
 
 on:
-  push:
-    branches:
-      - main   
-  pull_request:
-    branches:
-      - main   
+  workflow_dispatch:
 
 jobs:
-  check-files:
+  info:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    - name: Verify site files
-      run: |
-        echo "Listing site files..."
-        ls -R src
-        if [ ! -f src/index.html ]; then
-          echo "Error: index.html not found!"
-          exit 1
-        fi
-        echo "All required files are present!"
+      - name: Deployment Info
+        run: |
+          echo "Deployment Provider: Netlify"
+          echo "Deployment Method: Auto-deploy from main branch"
+          echo "Build Commands: None (static site)"
+          echo "Output Directory: src/"
