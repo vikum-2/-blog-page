@@ -68,28 +68,28 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "AI is Changing the World",
       excerpt: "Explore how AI is transforming tech, business, and daily life.",
       category: "AI",
-      image: "images/ai.jfif"
+      image: "image/ai.jfif"
     },
     {
       id: 2,
       title: "Top 10 Mobile Devices of 2026",
       excerpt: "A deep dive into the best smartphones and gadgets this year.",
       category: "Mobile",
-      image: "images/mobile.jpg"
+      image: "image/mobile.jpg"
     },
     {
       id: 3,
       title: "Gaming Laptops Reviewed",
       excerpt: "We tested the latest gaming laptops to find the best performance.",
       category: "Gaming",
-      image: "images/gaming.jpg"
+      image: "image/gaming.jpg"
     },
     {
       id: 4,
       title: "Building a Custom PC",
       excerpt: "Step-by-step guide for building your own high-performance PC.",
       category: "Hardware",
-      image: "images/hardware.jpg"
+      image: "image/hardware.jpg"
     }
   ];
 
