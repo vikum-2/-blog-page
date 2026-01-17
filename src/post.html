@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNest | Post</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- header -->
+  <header class="top-bar">
+    <h1 class="logo">TechNest</h1>
+    <div class="header-nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+    </div>
+  </header>
+
+  <!-- newsletter section = -->
+  <section class="newsletter-section">
+    <div class="newsletter-container">
+      <div class="newsletter-content">
+        <h3>Subscribe to TechNest</h3>
+        <p>Get the latest tech news, reviews, and gaming updates delivered to your inbox!</p>
+      </div>
+      <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email..." required>
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- blog content -->
+  <div class="blog-container">
+
+    <!-- returen back link -->
+    <a href="index.html" class="back-button">← Back to Posts</a>
+
+    <article class="post">
+      <h2 id="postTitle">Post Title</h2>
+
+      <p class="date">
+        <span id="postDate">January 1, 2026</span> ·
+        <span id="postCategory">Technology</span>
+      </p>
+
+      <img
+        id="postImage"
+        src=""
+        alt="Post image"
+        style="width:100%; border-radius:10px; margin-bottom:20px; display:none;"
+      >
+
+      <p id="postContent">
+        Post content goes here...
+      </p>
+    </article>
+
+  </div>
+
+  <!-- foooter -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>About TechNest</h4>
+        <p>Your source for tech, gaming, and computing insights.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: itbnm-2313-0072@gmail.com</p>
+        <p>Phone: +94 784 730 175</p>
+        <p>© 2026 Adeesha Akalanka & Vikum Prabodya</p>
+      </div>
+
+      <div class="footer-section social-links">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://github.com" target="_blank" class="social-link" title="GitHub">
+            <span class="social-icon">🐙</span>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn">
+            <span class="social-icon">💼</span>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="social-link" title="Twitter/X">
+            <span class="social-icon">𝕏</span>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram">
+            <span class="social-icon">📷</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- post js-->
+  <script src="post.js"></script>
+
+  <script>
+    function handleSubscribe(event) {
+      event.preventDefault();
+      const email = document.getElementById('newsletterEmail').value;
+      alert('Thanks for subscribing with ' + email + '! Check your inbox for updates.');
+      document.getElementById('newsletterEmail').value = '';
+    }
+  </script>
+
+</body>
+</html>

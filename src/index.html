@@ -1,69 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNest | Tech & Computing</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        header { text-align: center; margin-bottom: 20px; }
-        article { border-bottom: 1px solid #ccc; padding: 10px 0; }
-        h2 { margin: 0; }
-        p { margin: 5px 0; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNest | Tech & Computing</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="top-bar">
-      <h1 class="logo">TechNest</h1>
-      <input type="text" id="searchInput" placeholder="Search tech..." />
-    </header>
 
-    <div class="layout">
-      <!-- Sidebar -->
-      <aside class="sidebar">
-        <h3>Categories</h3>
-        <ul id="categoryList">
-          <li data-category="all">All</li>
-          <li data-category="AI">AI</li>
-          <li data-category="Mobile">Mobile</li>
-          <li data-category="Gaming">Gaming</li>
-          <li data-category="Hardware">Hardware</li>
-        </ul>
+  <!-- Hero section with slider -->
+  <section class="brand-hero">
+    <div class="slider-wrapper">
+      <div class="slide fade">
+        <img src="Images/brand/technology.jpg" alt="Technology">
+      </div>
+      <div class="slide fade">
+        <img src="Images/brand/Computing.jpg" alt="Computing">
+      </div>
+      <div class="slide fade">
+        <img src="Images/brand/Gaming.jpg" alt="Gaming">
+      </div>
+
+      <!-- Navigation dots -->
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <h1 class="brand-title">TechNest</h1>
+    <p class="brand-tagline">Technology • Computing • Reviews</p>
+  </section>
+
+  <!-- Top navigation bar -->
+  <header class="top-bar">
+    <h1 class="logo">TechNest</h1>
+    <div class="header-nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+    </div>
+    <input type="text" id="searchInput" placeholder="Search posts...">
+  </header>
+
+  <!-- Newsletter signup -->
+  <section class="newsletter-section">
+    <div class="newsletter-container">
+      <div class="newsletter-content">
+        <h3>Subscribe to TechNest</h3>
+        <p>Get the latest tech news, reviews, and gaming updates delivered to your inbox!</p>
+      </div>
+      <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email..." required>
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Layout ===== -->
+  <div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Categories</h3>
+      <ul id="categoryList">
+        <li class="active" data-category="all">All</li>
+        <li data-category="AI">AI</li>
+        <li data-category="Mobile">Mobile</li>
+        <li data-category="Gaming">Gaming</li>
+        <li data-category="Hardware">Hardware</li>
+      </ul>
     </aside>
-    <!-- Main content -->
-    <main class="content">
-      <div id="postsContainer" class="posts-grid">
-        <!-- Blog cards injected by JS -->
-    </div>
-    </main>
-    <!-- Main content -->
-  <main class="content">
-    <div id="postsContainer" class="posts-grid">
-      <!-- Blog cards injected by JS -->
-    </div>
-  </main>
-</div>
 
-      <main class="blog-container">
-    <article class="post">
-      <h2>First Blog Post</h2>
-      <p class="date">January 2026</p>
-      <p>This is my first blog post. Welcome to my blog!</p>
-    </article>
-    <article>
-    <h2>Second Blog Post</h2>
-    <p>This is another sample post with some text.</p>
-    </article>
-    <article>
-    <h2>Third Blog Post</h2>
-    <p>More content here. You can also add categories or tags later.</p>
-    </article>
+    <!-- Main Content -->
+    <main class="content" id="postsContainer">
+
+      <!-- ===== Article 1 ===== -->
+      <article class="post-card" data-category="AI">
+        <img src="../images/ai.jfif" alt="AI Technology" class="post-image">
+        <div class="category">AI</div>
+        <h2>AI Is Changing the World</h2>
+        <p>Explore how artificial intelligence is transforming technology, business, and daily life.</p>
+      </article>
+
+      <!-- ===== Article 2 ===== -->
+      <article class="post-card" data-category="Mobile">
+        <img src="../images/mobile.jpg" alt="Mobile Devices" class="post-image">
+        <div class="category">Mobile</div>
+        <h2>Top Mobile Devices of 2026</h2>
+        <p>A deep dive into the best smartphones and gadgets you can buy this year.</p>
+      </article>
+
+      <!-- ===== Article 3 ===== -->
+      <article class="post-card" data-category="Gaming">
+        <img src="../images/gaming.jpg" alt="Gaming Laptop" class="post-image">
+        <div class="category">Gaming</div>
+        <h2>Gaming Laptops Reviewed</h2>
+        <p>We tested the latest gaming laptops to find the best performance and value.</p>
+      </article>
+
+      <!-- ===== Article 4 ===== -->
+      <article class="post-card" data-category="Hardware">
+        <img src="../images/hardware.jpg" alt="PC Hardware" class="post-image">
+        <div class="category">Hardware</div>
+        <h2>Building a Custom PC</h2>
+        <p>A step-by-step guide to building your own high-performance desktop PC.</p>
+      </article>
+
     </main>
-    <footer>
-    <p>© 2026 Adeesha Akalanka</p>
-    </footer>
-<script src="scripts/app.js"></script>
-<script src="scripts/post.js"></script>
+
+  </div>
+
+  <!-- ===== Best Products Section ===== -->
+  <section class="best-products-section">
+    <h2>BEST PRODUCTS</h2>
+    <div class="products-grid">
+      <button class="product-btn" onclick="showCoupon('Best Gaming Laptop', 'https://www.gamestreet.lk/products.php?cat=MQ==&scat=MA==')">Best Gaming Laptop</button>
+      <button class="product-btn" onclick="showCoupon('Top Smartphone 2026', 'https://onei.lk/')">Best New and Used Apple Products</button>
+      <button class="product-btn" onclick="showCoupon('AI Tools Subscription', 'https://erabizsolutions.io/')">AI Software Development</button>
+      <button class="product-btn" onclick="showCoupon('PC Hardware Deals', 'https://www.gamestreet.lk/products.php?cat=NQ==&scat=MA==')">PC Hardware Deals</button>
+    </div>
+  </section>
+
+  <!-- ===== Advertisement Section ===== -->
+  <section class="ads-section">
+    <h2>Featured Partners</h2>
+    <div class="ads-grid">
+      <div class="ad-item">
+        <a href="https://www.gamestreet.lk/product_view.php?pid=MjEyNg==" target="_blank">
+          <img src="Images/brand/ssd.jpg" alt="Advertisement 1">
+        </a>
+      </div>
+      <div class="ad-item">
+        <a href="https://www.gamestreet.lk/product_view.php?pid=MzEzNg==" target="_blank">
+          <img src="Images/brand/monitor.jpg" alt="Advertisement 2">
+        </a>
+      </div>
+      <div class="ad-item">
+        <a href="https://www.gamestreet.lk/product_view.php?pid=MjM1NQ==" target="_blank">
+          <img src="Images/brand/asuslap.jpg" alt="Advertisement 3">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Coupon Modal ===== -->
+  <div id="couponModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeCoupon()">&times;</span>
+      <h2>Special Offer!</h2>
+      <p id="productName"></p>
+      <p>Get <strong>5% OFF</strong> with this coupon code:</p>
+      <div class="coupon-box">
+        <input type="text" id="couponCode" value="TECHNEST5" readonly>
+        <button onclick="copyCoupon()" class="copy-btn">Copy Code</button>
+      </div>
+      <a id="productLink" href="#" target="_blank" class="visit-btn">Visit Product</a>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>About TechNest</h4>
+        <p>Your source for tech, gaming, and computing insights.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: itbnm-2313-0072@gmail.com</p>
+        <p>Phone: +94 784 730 175</p>
+        <p>© 2026 Adeesha Akalanka & Vikum Prabodya</p>
+      </div>
+
+      <div class="footer-section social-links">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://github.com" target="_blank" class="social-link" title="GitHub">
+            <span class="social-icon">🐙</span>
+          </a>
+          <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn">
+            <span class="social-icon">💼</span>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="social-link" title="Twitter/X">
+            <span class="social-icon">𝕏</span>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram">
+            <span class="social-icon">📷</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="post.js"></script>
+
+  <!-- ===== Slider & Newsletter JavaScript ===== -->
+  <script>
+    // ===== Newsletter Handler =====
+    function handleSubscribe(event) {
+      event.preventDefault();
+      const email = document.getElementById('newsletterEmail').value;
+      alert('Thanks for subscribing with ' + email + '! Check your inbox for updates.');
+      document.getElementById('newsletterEmail').value = '';
+    }
+
+    let slideIndex = 1;
+
+    function currentSlide(n) {
+      showSlide(slideIndex = n);
+    }
+
+    function showSlide(n) {
+      const slides = document.getElementsByClassName("slide");
+      const dots = document.getElementsByClassName("dot");
+
+      if (n > slides.length) slideIndex = 1;
+      if (n < 1) slideIndex = slides.length;
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].classList.add("active");
+    }
+
+    // Auto slide every 5 seconds
+    function autoSlide() {
+      slideIndex++;
+      showSlide(slideIndex);
+      setTimeout(autoSlide, 5000);
+    }
+
+    // Initialize slider
+    showSlide(slideIndex);
+    autoSlide();
+
+    // ===== Coupon Modal Functions =====
+    function showCoupon(productName, productUrl) {
+      document.getElementById('productName').textContent = productName;
+      document.getElementById('productLink').href = productUrl;
+      document.getElementById('couponModal').style.display = 'block';
+    }
+
+    function closeCoupon() {
+      document.getElementById('couponModal').style.display = 'none';
+    }
+
+    function copyCoupon() {
+      const couponInput = document.getElementById('couponCode');
+      couponInput.select();
+      couponInput.setSelectionRange(0, 99999);
+      document.execCommand('copy');
+      alert('Coupon code copied: ' + couponInput.value);
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+      const modal = document.getElementById('couponModal');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    }
+  </script>
+
 </body>
-</html> 
+</html>
