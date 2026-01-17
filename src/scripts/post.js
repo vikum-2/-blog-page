@@ -16,7 +16,7 @@ const posts = [
     category: "Mobile",
     excerpt: "Best phones for tech lovers.",
     content: "From foldables to AI-powered cameras, mobile devices in 2026 focus on performance, battery life, and smart features.",
-    image: "../image/Top-Mobile-Devices.jpg",
+    image: "../image/top-mobile-devices.jpg",
     date: "January 8, 2026",
     coupon: "TECHNEST5"
   },
@@ -26,7 +26,7 @@ const posts = [
     category: "Gaming",
     excerpt: "What gamers expect in 2026.",
     content: "Cloud gaming, ray tracing, and AI NPCs are reshaping the gaming experience for both casual and competitive players.",
-    image: "../image/Gaming-Trend-2026.jpg",
+    image: "../image/gaming-trend-2026.jpg",
     date: "January 12, 2026",
     coupon: "TECHNEST5"
   },
@@ -36,7 +36,7 @@ const posts = [
     category: "Hardware",
     excerpt: "Boost your PC performance.",
     content: "Upgrading SSDs, RAM, and GPUs can dramatically improve system performance for work and gaming.",
-    image: "../image/Hardware-Upgrades-That-Matter.jpg",
+    image: "../image/hardware-upgrades-that-matter.jpg",
     date: "January 15, 2026",
     coupon: "TECHNEST5"
   },
