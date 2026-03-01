@@ -18,6 +18,7 @@ Visual Studios
 Visual Studios Terminal
 Git Bash
 Github 
+Docker
 
 ## Features
 Blog post listing (Home page)
@@ -69,13 +70,12 @@ blog-page/
 - Image slider 
 - Dark theme UI
 - Responsive design
-- [List specific commits/contributions]
 
 ### K. T. Vikum Prabodya
 - Repository setup and configuration
 - GitHub Actions CI/CD pipeline implementation
 - Deployment setup and management
-- [List specific commits/features]
+- Docker Deploymentation
 
 ## Setup Instructions
 
