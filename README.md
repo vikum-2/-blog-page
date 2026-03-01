@@ -104,4 +104,22 @@ npm run dev
 # Build Status 
 ---
 
+# TechNest Blog Website (static frontend application) (Dockerized)
+
+## Prerequisites
+- Docker installed
+- Docker Compose installed
+
+## Build the Image
+docker build -t technest .
+
+## Run Container
+docker run -p 8080:80 technest
+
+Then open:
+http://localhost:8080
+
+## Using Docker Compose
+docker-compose up --build
+
 
